@@ -5,7 +5,7 @@ class MyWindow(QtWidgets.QWidget):
     def __init__(self, parent=None):
         super().__init__()
         QtWidgets.QWidget.__init__(self, parent)
-        self.attempts = 5
+        self.attempts = 6
         self.live = QtWidgets.QLabel(f"Жизни: {self.attempts}")
         self.live.setAlignment(QtCore.Qt.AlignmentFlag.AlignRight)
         self.label = QtWidgets.QLabel("Введите число от 1 до 100")
