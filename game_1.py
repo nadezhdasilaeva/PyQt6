@@ -45,6 +45,7 @@ class MyWindow(QtWidgets.QWidget):
 
     def restart(self):
         self.attempts = 5
+        self.number_user = randint(1, 100)
         self.live.setText(f"Жизни: {self.attempts}")
         self.label.setText("Введите число от 1 до 100")
 
